@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgcover"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvjudul"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:text="Nama novel"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tvpenulis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama penulis"
+                android:paddingLeft="20dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvchapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah chapter"
+                android:paddingLeft="20dp"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/tvdeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deskripsi"
+                android:paddingLeft="20dp"
+                android:textSize="8dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
